@@ -2,10 +2,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.wmixvideo</groupId>
-    <artifactId>nfe</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>nfe-bom</artifactId>
+    <packaging>pom</packaging>
     <version>3.0.6-SNAPSHOT</version>
-    <name>nfe</name>
+	<modules>
+		<module>core</module>
+		<module>cte</module>
+		<module>cte200</module>
+		<module>cte300</module>
+		<module>mdfe3</module>
+		<module>nfe</module>
+		<module>nfe310</module>
+		<module>nfe400</module>
+	</modules>
+	<name>nfe</name>
     <description>Biblioteca de comunicacao de nota fiscal eletronica brasileira</description>
     <url>https://github.com/wmixvideo/nfe</url>
 
@@ -57,6 +67,51 @@
             <url>https://github.com/cbockorny</url>
         </developer>
     </developers>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.github.wmixvideo</groupId>
+				<artifactId>core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.wmixvideo</groupId>
+				<artifactId>cte</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.wmixvideo</groupId>
+				<artifactId>cte200</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.wmixvideo</groupId>
+				<artifactId>cte300</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.wmixvideo</groupId>
+				<artifactId>mdfe3</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.wmixvideo</groupId>
+				<artifactId>nfe</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.wmixvideo</groupId>
+				<artifactId>nfe310</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.wmixvideo</groupId>
+				<artifactId>nfe400</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
     <dependencies>
         <!-- Simple Xml Framework -->
@@ -271,7 +326,7 @@
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <version>3.1.0</version>
                         <configuration>
-                            <additionalparam>-Xdoclint:none</additionalparam>
+                            <!--<additionalparam>-Xdoclint:none</additionalparam>--> <!-- TODO o mvn no idea não reconhece-->
                             <failOnError>false</failOnError>
                             <doclint>none</doclint>
                         </configuration>
