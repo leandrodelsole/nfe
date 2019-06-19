@@ -23,9 +23,9 @@ import com.fincatto.documentofiscal.nfe310.classes.lote.envio.NFLoteEnvio;
 import com.fincatto.documentofiscal.nfe310.classes.lote.envio.NFLoteEnvioRetornoRecebimentoInfo;
 import com.fincatto.documentofiscal.nfe310.classes.lote.envio.NFLoteIndicadorProcessamento;
 import com.fincatto.documentofiscal.nfe310.classes.nota.*;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFReference;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignature;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignedInfo;
+import com.fincatto.documentofiscal.core.classes.nota.assinatura.NFReference;
+import com.fincatto.documentofiscal.core.classes.nota.assinatura.NFSignature;
+import com.fincatto.documentofiscal.core.classes.nota.assinatura.NFSignedInfo;
 import org.apache.commons.lang3.StringUtils;
 
 import java.math.BigDecimal;

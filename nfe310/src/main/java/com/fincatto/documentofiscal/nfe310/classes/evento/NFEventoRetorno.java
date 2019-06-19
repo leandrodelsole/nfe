@@ -1,7 +1,7 @@
 package com.fincatto.documentofiscal.nfe310.classes.evento;
 
 import com.fincatto.documentofiscal.DFBase;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignature;
+import com.fincatto.documentofiscal.core.classes.nota.assinatura.NFSignature;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 

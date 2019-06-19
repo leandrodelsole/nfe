@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.classes.evento.NFEventoRetorno;
 import com.fincatto.documentofiscal.nfe310.classes.evento.NFInfoEventoRetorno;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignature;
+import com.fincatto.documentofiscal.core.classes.nota.assinatura.NFSignature;
 
 public class NFEventoRetornoTest {
 

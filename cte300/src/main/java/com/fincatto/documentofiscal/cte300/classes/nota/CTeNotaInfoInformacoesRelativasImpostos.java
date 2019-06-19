@@ -1,6 +1,7 @@
 package com.fincatto.documentofiscal.cte300.classes.nota;
 
 import com.fincatto.documentofiscal.DFBase;
+import com.fincatto.documentofiscal.cte.classes.nota.CTeNotaInfoInformacoesRelativasImpostosICMSPartilha;
 import com.fincatto.documentofiscal.validadores.BigDecimalValidador;
 import com.fincatto.documentofiscal.validadores.StringValidador;
 import org.simpleframework.xml.Element;

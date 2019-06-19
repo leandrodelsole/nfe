@@ -2,7 +2,7 @@ package com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento;
 
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignature;
+import com.fincatto.documentofiscal.core.classes.nota.assinatura.NFSignature;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -15,7 +15,7 @@
 		<module>nfe310</module>
 		<module>nfe400</module>
 	</modules>
-	<name>nfe</name>
+	<name>nfe-bom</name>
     <description>Biblioteca de comunicacao de nota fiscal eletronica brasileira</description>
     <url>https://github.com/wmixvideo/nfe</url>
 

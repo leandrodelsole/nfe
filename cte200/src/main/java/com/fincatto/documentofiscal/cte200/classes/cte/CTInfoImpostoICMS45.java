@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.cte200.classes.cte;
 import org.simpleframework.xml.Element;
 
 import com.fincatto.documentofiscal.DFBase;
-import com.fincatto.documentofiscal.nfe310.classes.NFNotaInfoImpostoTributacaoICMS;
+import com.fincatto.documentofiscal.cte200.classes.NFNotaInfoImpostoTributacaoICMS;
 
 public class CTInfoImpostoICMS45 extends DFBase {
     private static final long serialVersionUID = 5790409052194264441L;

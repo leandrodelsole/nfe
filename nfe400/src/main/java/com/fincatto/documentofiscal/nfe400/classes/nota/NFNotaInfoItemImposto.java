@@ -2,8 +2,8 @@ package com.fincatto.documentofiscal.nfe400.classes.nota;
 
 import com.fincatto.documentofiscal.DFBase;
 import com.fincatto.documentofiscal.DFLog;
+import com.fincatto.documentofiscal.nfe400.validadores.IcmsValidador;
 import com.fincatto.documentofiscal.validadores.BigDecimalValidador;
-import com.fincatto.documentofiscal.validadores.StringValidador;
 import org.simpleframework.xml.Element;
 
 import java.lang.reflect.InvocationTargetException;
@@ -47,7 +47,7 @@ public class NFNotaInfoItemImposto extends DFBase {
             throw new IllegalStateException("ICMS, IPI e II sao mutuamente exclusivo com ISSQN");
         }
         try {
-            StringValidador.validaPreenchimentoDeMargemValorAgregado(icms);
+            IcmsValidador.validaPreenchimentoDeMargemValorAgregado(icms);
         }catch (IllegalAccessException e) {
             DFLog.getLogger(NFNotaInfoItemImposto.class)
                     .error("Erro ao validar preenchimento de Margem de Valor agregado", e);

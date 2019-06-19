@@ -7,7 +7,8 @@ public class CTTipoUnidadeTransporteTest {
 
     @Test
     public void deveRepresentarOCodigoCorretamente() {
-        Assert.assertEquals("1", CTTipoUnidadeTransporte.RODOVIARIO_TRACAO.getCodigo());
+		Assert.assertNull(CTTipoUnidadeTransporte.valueOfCodigo(null));
+		Assert.assertEquals("1", CTTipoUnidadeTransporte.RODOVIARIO_TRACAO.getCodigo());
         Assert.assertEquals("2", CTTipoUnidadeTransporte.RODOVIARIO_REBOQUE.getCodigo());
         Assert.assertEquals("3", CTTipoUnidadeTransporte.NAVIO.getCodigo());
         Assert.assertEquals("4", CTTipoUnidadeTransporte.BALSA.getCodigo());

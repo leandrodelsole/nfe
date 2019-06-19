@@ -8,7 +8,7 @@ import org.junit.Test;
 import com.fincatto.documentofiscal.nfe310.classes.evento.inutilizacao.NFEnviaEventoInutilizacao;
 import com.fincatto.documentofiscal.nfe310.classes.evento.inutilizacao.NFRetornoEventoInutilizacao;
 import com.fincatto.documentofiscal.nfe310.classes.evento.inutilizacao.NFRetornoEventoInutilizacaoDados;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignature;
+import com.fincatto.documentofiscal.core.classes.nota.assinatura.NFSignature;
 
 public class NFRetornoEventoInutilizacaoTest {
 
